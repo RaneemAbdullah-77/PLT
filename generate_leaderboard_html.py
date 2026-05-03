@@ -120,7 +120,7 @@ tr:nth-child(even) {{
 
 <body>
 
-<h1>🏆 Leaderboard (Ranking by {metric_col})</h1>
+<h1>🏆 Leaderboard </h1>
 
 <table>
 <tr>
