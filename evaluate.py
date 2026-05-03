@@ -59,6 +59,14 @@ if merged.empty:
     sys.exit(1)
 
 ###################################################################################################
+
+# =========================
+# Normalize IDs (Remove extensions)
+# =========================
+labels['id'] = labels['id'].str.replace(r'\.(png|jpg|JPG|jpeg)$', '', regex=True)
+submission['id'] = submission['id'].str.replace(r'\.(png|jpg|JPG|jpeg)$', '', regex=True)
+
+# Now perform the merge
 merged = pd.merge(labels, submission, on="id")
 
 y_true = merged["true_label"]
