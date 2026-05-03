@@ -7,7 +7,8 @@ import os
 # CONFIGURATION
 # =========================
 # Choose ranking metric: "Accuracy" or "F1-Score"
-metric = "Accuracy"   # change to "F1-Score" if needed
+# metric = "Accuracy"   # change to "F1-Score" if needed
+metric = "F1-Score"
 
 # =========================
 # Arguments
